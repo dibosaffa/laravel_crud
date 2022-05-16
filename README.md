@@ -1,11 +1,15 @@
-clone/download this project
+## Requirements
+•	PHP 7.3 or higher <br>
+•	Node 12.13.0 or higher <br>
+
+## Usage <br>
+Setting up your development environment on your local machine: <br>
+```
+git clone this project
 cd to project folder
-run composer install to install composer dependency
-run npm install to install npm dependency
-run npm run dev to compile assets (Mix)
-copy .env.example to .env, and change the configuration as your machine.
-run php artisan key:generate (if there is no key yet)
-run your server, and create database (name same as in .env)
-run php artisan migrate
-run php artisan db:seed to seed the database with initial data
-run your app directly or with php artisan ser
+cp .env.example .env
+composer install
+php artisan key:generate
+php artisan cache:clear && php artisan config:clear
+php artisan serve
+```
